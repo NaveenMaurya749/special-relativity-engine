@@ -10,11 +10,15 @@ This is the class for a three-dimensional vector.
 ### 3.1.0 Initializer
 ### 3.1.1 Members
 The class has three coordinate attributes: x, y, z.
-These 
+These are doubles that function as Cartesian Coordinates.
+
 ### 3.1.2 Methods
 #### 3.1.1 getCoordinates(self)
+Returns a three-wide array of its coordinates.
 #### 3.1.2 setCoordinates(self, x, y, z)
+Set all three coordinates at once.
 #### 3.1.2 magnitude(self)
+Returns the magnitude, or radial distance from the origin for the said vector.
 
 ## 3.2 vector_4d
 ### 3.2.0 Initializer
