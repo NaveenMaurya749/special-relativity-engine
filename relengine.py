@@ -1,4 +1,4 @@
-c = 299792458 #speed of light in m/s
+c = 299792458.0 #speed of light in m/s
 import math
 
 class vector_3d:
