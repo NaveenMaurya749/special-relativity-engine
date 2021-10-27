@@ -21,6 +21,15 @@ class vector_3d:
    r.z = self.z - other.z
    return r
 
+  def _mul_(self,other):  #Dot Product
+   return self.x*other.x + self.y*other.y + self.z*other.z
+
+  def _pow_(self, alpha): #Product with scalar
+   r = vector_3d(0,0,0)
+   r.x *= alpha
+   r.y *= alpha
+   r.z *= alpha
+   
   def getCoordinates(self):
    return [self.x, self.y, self.z]
   def setCoordinates(self, x, y, z):
@@ -69,5 +78,16 @@ class Engine:
   def relativeTranslation(b):
    for i in Bodies:
     i.position -= b.position
-    i.position /= b.dilation_factor
-    #To Be Finished
+    
+    #Lorentz Transform following
+    speed = b.velocity.magnitude()
+    gamma = b.dilation_factor()
+    r = b.velocity/speed
+    X = (i.position * r) #The to-be contracted length component
+    i.position = i.position - (X**(1-gamma))
+
+    #Now, for their speeds:
+    V_x = i.velocity * r
+    V_yz = i.velocity - V
+    V_x_prime = (V_x - b.velocity)/(1 - V_x.magnitude()*speed/(c*c))
+    i.velocity = V_yz + V_x_prime
