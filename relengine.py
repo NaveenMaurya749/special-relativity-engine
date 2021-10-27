@@ -45,6 +45,7 @@ class body:
 
   rest_mass = 0.0f
   relativistic_mass
+  dilation_constant
   position = new vector_3d(0.0, 0.0, 0.0)
   velocity = new vector_4d(0.0, 0.0, 0.0)
 
