@@ -1,44 +1,66 @@
 c = 299792458 #speed of light in m/s
+import math
 
 class vector_3d:
- public:
   def _init_(self, x, y, z):
    self.x = x
    self.y = y
    self.z = z
+
   def getCoordinates():
    return [self.x, self.y, self.z]
-  setCoordinates(x, y, z)
-  double getX()
-  double getY()
-  double getZ()
-  setX(double)
-  setY(double)
-  setZ(double)
-  double magnitude()
+  def setCoordinates(x, y, z):
+   self.x = x
+   self.y = y
+   self.z = z
 
-  double x
-  double y
-  double z
+  def getX():
+   return self.x
+  def getY():
+   return self.y
+  def getZ():
+   return self.z
+
+  def setX(x)
+   self.x = x
+  def setY(y)
+   self.y = y
+  def setZ(z)
+   self.z = z
+  def magnitude():
+   return math.sqrt(self.x*self.x + self.y*self.y + self.z*self.z)
 
 class vector_4d:
- public:
-  _init(double, double, double, double)
-  getCoordinates()
-  setCoordinates(double x, double y, double z, double t)
-  getX()
-  getY()
-  getZ()
-  getT()
-  setX(double)
-  setY(double)
-  setZ(double)
-  setT(double)
+  def _init_(self, x, y, z):
+   self.x = x
+   self.y = y
+   self.z = z
 
- private:
-  double x
-  double y
-  double z
+  def getCoordinates():
+   return [self.x, self.y, self.z, self.t]
+  def setCoordinates(x, y, z, t):
+   self.x = x
+   self.y = y
+   self.z = z
+   self.t = t
+
+  def getX():
+   return self.x
+  def getY():
+   return self.y
+  def getZ():
+   return self.z
+  def getT():
+   return self.t
+
+  def setX(x)
+   self.x = x
+  def setY(y)
+   self.y = y
+  def setZ(z)
+   self.z = z
+  def setT(t)
+   self.t = t
 
 class body:
  public:
