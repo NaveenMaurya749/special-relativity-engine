@@ -2,13 +2,13 @@ c = 299792458 #speed of light in m/s
 
 class vector_3d:
  public:
-  def _init_(self, double X, double Y, double Z):
+  def _init_(self, x, y, z):
    self.x = x
    self.y = y
    self.z = z
-  getCoordinates():
+  def getCoordinates():
    return [self.x, self.y, self.z]
-  setCoordinates(double x, double y, double z)
+  setCoordinates(x, y, z)
   double getX()
   double getY()
   double getZ()
