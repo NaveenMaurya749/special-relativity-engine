@@ -39,17 +39,6 @@ class vector_3d:
   def magnitude(self):
    return math.sqrt(self.x*self.x + self.y*self.y + self.z*self.z)
 
-"""
-class vector_4d:
-  def _init_(self, x, y, z):
-   self.x = x
-   self.y = y
-   self.z = z
-
-  def getCoordinates(self):
-   return [self.x, self.y, self.z, self.t]
-  def setCoordinates(self, x, y, z, t):
-"""
 
 class body:
   def _init_(self):
@@ -71,8 +60,9 @@ class body:
    return 1/(math.sqrt(1-self.velocity*self.velocity/(c*c)))
 
 class Engine:
-  def _init_():
-   Bodies = []
+  def _init_(self):
+   self.Bodies = []
+   self.time = 0.0
 
   def run(self, t):
    j = 0
@@ -88,6 +78,7 @@ class Engine:
 
   def addBody(b):
    Bodies.append(b)
+
   def relativeTranslation(b):
    for i in Bodies:
     i.position -= b.position
