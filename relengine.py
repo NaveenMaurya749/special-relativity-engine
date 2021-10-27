@@ -6,6 +6,20 @@ class vector_3d:
    self.x = x
    self.y = y
    self.z = z
+  
+  def _add_(self,other)
+   r = new vector_3d(0,0,0)
+   r.x = self.x + other.x
+   r.y = self.y + other.y
+   r.z = self.z + other.z
+   return r
+
+  def _sub_(self,other)
+   r = new vector_3d(0,0,0)
+   r.x = self.x - other.x
+   r.y = self.y - other.y
+   r.z = self.z - other.z
+   return r
 
   def getCoordinates(self):
    return [self.x, self.y, self.z]
@@ -16,6 +30,7 @@ class vector_3d:
   def magnitude(self):
    return math.sqrt(self.x*self.x + self.y*self.y + self.z*self.z)
 
+"""
 class vector_4d:
   def _init_(self, x, y, z):
    self.x = x
@@ -25,37 +40,7 @@ class vector_4d:
   def getCoordinates(self):
    return [self.x, self.y, self.z, self.t]
   def setCoordinates(self, x, y, z, t):
-   c = 299792458 #speed of light in m/s
-import math
-
-class vector_3d:
-  def _init_(self, x, y, z):
-   self.x = x
-   self.y = y
-   self.z = z
-
-  def getCoordinates(self):
-   return [self.x, self.y, self.z]
-  def setCoordinates(self, x, y, z):
-   self.x = x
-   self.y = y
-   self.z = z
-  def magnitude(self):
-   return math.sqrt(self.x*self.x + self.y*self.y + self.z*self.z)
-
-class vector_4d:
-  def _init_(self, x, y, z):
-   self.x = x
-   self.y = y
-   self.z = z
-
-  def getCoordinates(self):
-   return [self.x, self.y, self.z, self.t]
-  def setCoordinates(self, x, y, z, t):
-   self.x = x
-   self.y = y
-   self.z = z
-   self.t = t
+"""
 
 class body:
   def _init_(self):
