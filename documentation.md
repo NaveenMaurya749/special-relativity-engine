@@ -58,6 +58,11 @@ A final vector_3d that dictates the rate of change of velocity after considerati
 
 ### 3.2.2 Methods
 
+#### 3.2.2.1 getPosition(self)
+Returns a list of position coordinates x, y and z.
+#### 3.2.2.2 getVelocity(self)
+Returns a list of velocity coordinates x, y and z.
+
 #### 3.2.2.1 relativistic_mass(self)
 As the speed of a body increases and becomes comparable to the speed of light, its energy increases and in its own frame of reference, it is reflected in the form of mass given by the infamous mass-energy equivalence relationship
 
