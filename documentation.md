@@ -1,8 +1,28 @@
 # 0. What is Relengine?
 Relengine is a point-body engine for special relativity physics,
 available under the github respository: https://github.com/NaveenMaurya749/special-relativity-engine
+
 # 1. What is relativity?
+Relativity refers to the concept that space and time, are relative measurements, stemming from a frame of reference.
+Earlier, space was considered to be relative while time was considered absolute.
+Colloiuqually, meaning that if you observe an object moving about with a certain velocity, it observe itself to be still, but you moving away with the same speed, opposite in direction.
+Hence, space is a measurement that is conveyed relative to a frame of reference.
+So light, being an entity traversing through space, it should slow down or speed up based on frame of reference. Right?
+
+Albert Einstein, a famous German-native physicist proposed the extended version of relativity, called Special Relativity, and then a while later General Relativity, that remains undebunked till this day despite being one of the most experimented topic in physics.
+He proposed that along with space, time is also relative.
+In his 1905 theory of Special Relativity, he stated three postulates all bodies must follow:
+1. Laws of physics take the same form in all inertial frames of reference.
+2. The speed of light shall remain invariant in all frames of reference.
+
 # 2. How does Relengine implement it?
+Relengine develops the notion of a vector in space, and then associates a body with a position vector and a velocity vector.
+Through Relengine, one may transcend from one frame of reference to another, while the related spacetime, position and velocity vectors for all bodies under consideration are morphed by applicable physical laws.
+
+Relengine also allows simulation of the space-time continuum for a set amount of time, with forces involved.
+
+Relengine provides a way to study, interpret or implement into your projects, a relativistic engine.
+
 # 3. Classes
 
 ## 3.1 vector_3d
