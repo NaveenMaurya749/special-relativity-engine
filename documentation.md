@@ -13,6 +13,8 @@ The class has three coordinate attributes: x, y, z.
 These are doubles that function as Cartesian Coordinates.
 
 ### 3.1.2 Methods
+#### 3.1.0 _add_ and _sub_ (Operator overloading)
+Operators '+' and '-' have been overloaded so as to perform individually on each of the Cartesian coordinates.
 #### 3.1.1 getCoordinates(self)
 Returns a three-wide array of its coordinates.
 #### 3.1.2 setCoordinates(self, x, y, z)
