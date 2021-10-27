@@ -83,7 +83,7 @@ class Engine:
      i.velocity += i.force**(1/i.relativistic_mass())
      i.position += i.velocity * dt
     time += dt
-    j++
+    j += 1
 
 
   def addBody(b):
