@@ -8,14 +8,14 @@ class vector_3d:
    self.z = z
   
   def _add_(self,other):
-   r = new vector_3d(0,0,0)
+   r = vector_3d(0,0,0)
    r.x = self.x + other.x
    r.y = self.y + other.y
    r.z = self.z + other.z
    return r
 
   def _sub_(self,other):
-   r = new vector_3d(0,0,0)
+   r = vector_3d(0,0,0)
    r.x = self.x - other.x
    r.y = self.y - other.y
    r.z = self.z - other.z
