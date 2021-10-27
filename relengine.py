@@ -53,6 +53,11 @@ class body:
    self.velocity = v
    self.force = f
 
+  def getPosition(self):
+   return ([position.x, position.y, position.z])
+  def getVelocity(self):
+   return ([velocity.x, velocity.y, velocity.z])
+
   def relativistic_mass(self):
    return self.rest_mass*(1+self.velocity*self.velocity/(2*c*c))
   def dilation_factor(self):
