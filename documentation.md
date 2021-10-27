@@ -38,16 +38,16 @@ The class has three coordinate attributes: x, y, z.
 These are doubles that function as Cartesian Coordinates.
 
 ### 3.1.2 Methods
-#### 3.1.0 \_add\_, \_sub\_, \_mul\_, \_pow\_ (Operator Overloading)
+#### 3.1.2.0 \_add\_, \_sub\_, \_mul\_, \_pow\_ (Operator Overloading)
 Operators '+', '-', '\*', '\*\*', have been overloaded for the purposes of convenience during computations.
 '+' and '-' so as to perform individually on each of the Cartesian coordinates.
 '*' has been used to implement dot product of two vectors
 '**' has been used to implement multiplication of the vector by a scalar. (Scaling)
-#### 3.1.1 getCoordinates(self)
+#### 3.1.2.0 getCoordinates(self)
 Returns a three-wide array of its coordinates.
-#### 3.1.2 setCoordinates(self, x, y, z)
+#### 3.1.2.2 setCoordinates(self, x, y, z)
 Set all three coordinates at once.
-#### 3.1.2 magnitude(self)
+#### 3.1.2.3 magnitude(self)
 Returns the magnitude, or radial distance from the origin for the said vector.
 
 ## 3.2 body
@@ -83,14 +83,14 @@ Returns a list of position coordinates x, y and z.
 #### 3.2.2.2 getVelocity(self)
 Returns a list of velocity coordinates x, y and z.
 
-#### 3.2.2.1 relativistic_mass(self)
+#### 3.2.2.3 relativistic_mass(self)
 As the speed of a body increases and becomes comparable to the speed of light, its energy increases and in its own frame of reference, it is reflected in the form of mass given by the infamous mass-energy equivalence relationship
 
 E = m_0 c² + 1/2 m_0 v² = mc²
 
 where m_0 is the rest mass of the body, v its speed and m is the relativistic mass.
 
-#### 3.2.2.2 dilation_constant(self)
+#### 3.2.2.4 dilation_factor(self)
 Given by √(1-v²/c²), this constant dictates how slower time behaves for an object of speed v.
 
 ## 3.3 Engine
