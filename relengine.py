@@ -45,13 +45,12 @@ class body:
    self.rest_mass = 0.0
    self.position = vector_3d(0,0,0)
    self.velocity = vector_3d(0,0,0)
+   self.force = vector_3d(0,0,0)
 
-  def _init_(self, p, v, m):
+  def _init_(self, p, v, m, f):
    self.rest_mass = m
    self.position = p
    self.velocity = v
-  
-  def setForce(f):
    self.force = f
 
   def relativistic_mass(self):
