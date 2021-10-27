@@ -23,10 +23,18 @@ These
 
 ## 3.3 body
 ### 3.3.0 Initializers
+
 ### 3.3.1 Members
 #### 3.3.1.1 rest_mass
+The mass of the body, in kg when it is at rest and not influenced by relativistic phenomena.
+
 #### 3.3.1.2 position
+A vector_3d that stores the position of the body relative to the current frame of reference, in Cartesian coordinates.
+
 #### 3.3.1.3 velocity
+Another vector_3d that stores the velocity of the body in Cartesian coordinates.
+
+
 ### 3.3.2 Methods
 #### 3.3.2.1 relativistic_mass(self)
 As the speed of a body increases and becomes comparable to the speed of light, its energy increases and in its own frame of reference, it is reflected in the form of mass given by the infamous mass-energy equivalence relationship
@@ -34,6 +42,9 @@ As the speed of a body increases and becomes comparable to the speed of light, i
 E = m_0 c² + 1/2 m_0 v² = mc²
 
 where m_0 is the rest mass of the body, v its speed and m is the relativistic mass.
+
+#### 3.3.2.2 dilation_constant(self)
+Given by √(1-v²/c²), this constant dictates how slower time behaves for an object of speed v.
 
 ## 3.4 Force
 ### 3.3.0 Initializers
