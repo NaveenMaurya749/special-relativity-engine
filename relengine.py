@@ -7,27 +7,13 @@ class vector_3d:
    self.y = y
    self.z = z
 
-  def getCoordinates():
+  def getCoordinates(self):
    return [self.x, self.y, self.z]
-  def setCoordinates(x, y, z):
+  def setCoordinates(self, x, y, z):
    self.x = x
    self.y = y
    self.z = z
-
-  def getX():
-   return self.x
-  def getY():
-   return self.y
-  def getZ():
-   return self.z
-
-  def setX(x)
-   self.x = x
-  def setY(y)
-   self.y = y
-  def setZ(z)
-   self.z = z
-  def magnitude():
+  def magnitude(self):
    return math.sqrt(self.x*self.x + self.y*self.y + self.z*self.z)
 
 class vector_4d:
@@ -36,45 +22,31 @@ class vector_4d:
    self.y = y
    self.z = z
 
-  def getCoordinates():
+  def getCoordinates(self):
    return [self.x, self.y, self.z, self.t]
-  def setCoordinates(x, y, z, t):
+  def setCoordinates(self, x, y, z, t):
    self.x = x
    self.y = y
    self.z = z
-   self.t = t
-
-  def getX():
-   return self.x
-  def getY():
-   return self.y
-  def getZ():
-   return self.z
-  def getT():
-   return self.t
-
-  def setX(x)
-   self.x = x
-  def setY(y)
-   self.y = y
-  def setZ(z)
-   self.z = z
-  def setT(t)
    self.t = t
 
 class body:
- public:
-  _init()
+  def _init_(self):
+   pass
+  def _init_(self, p, v, m):
+   self.rest_mass = m
+   self.position = p
+   self.velocity = v
+
   get_rest_mass()
   set_rest_mass(float)
   get_position()
   set_position(point_3d)
 
- private:
-  float rest_mass = 0.0f
-  float relativistic_mass
-  vector_3d position
-  vector_3d velocity
+  rest_mass = 0.0f
+  relativistic_mass
+  position = new vector_3d(0.0, 0.0, 0.0)
+  velocity = new vector_4d(0.0, 0.0, 0.0)
 
 class Engine:
  public:
