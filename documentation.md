@@ -30,6 +30,7 @@ These
 ### 3.3.2 Methods
 #### 3.3.2.1 relativistic_mass(self)
 As the speed of a body increases and becomes comparable to the speed of light, its energy increases and in its own frame of reference, it is reflected in the form of mass given by the infamous mass-energy equivalence relationship
+
 E = m_0 c² + 1/2 m_0 v² = mc²
 
 where m_0 is the rest mass of the body, v its speed and m is the relativistic mass.
