@@ -28,8 +28,14 @@ These
 #### 3.3.1.2 position
 #### 3.3.1.3 velocity
 ### 3.3.2 Methods
+#### 3.3.2.1 relativistic_mass(self)
+As the speed of a body increases and becomes comparable to the speed of light, its energy increases and in its own frame of reference, it is reflected in the form of mass given by the infamous mass-energy equivalence relationship
+E = m_0 c² + 1/2 m_0 v² = mc²
+
+where m_0 is the rest mass of the body, v its speed and m is the relativistic mass.
 
 ## 3.4 Force
+### 3.3.0 Initializers
 
 ## 3.5 Engine
 The Engine is the core component of the library.
@@ -58,10 +64,13 @@ This is where the engine drops one inertial frame of reference to another. The n
 The concept of relativity initially proposed by Gallileo, is now called Gallilean Relativity.
 It was as simple as subtracting each component of the Body from every body in consideration.
 For a plot of spacetime, it will appear like a skewing linear transformation.
-However, it was later discovered this notion was incorrect and the true nature of relativity allows not only space but time to be relative, and that no body may exceed the speed of light, as Albert Einstein proposed. The transform thus responsible to percieve a point in spacetime from a different point in spacetime is called Lorentz transform.
+However, it was later discovered this notion was incorrect and the true nature of relativity allows not only space but time to be relative, and that no body may exceed the speed of light, as Albert Einstein proposed. The transform thus responsible to percieve a point in spacetime from a different speed is called Lorentz transform.
 
-Mathematically, under gaussian coordinates for the speed v, it is given by
+Mathematically, under gaussian coordinates, for the speed v, it is given by
 [r, t] -> (1/A) 
+where, A = √(1-v²/c²) is the dilation constant.
 
 # 4. Usage and main.py
-
+One might use main.py to write scripts, or this library so as to:
+1. Observe, Study and Interpret Special Relativity
+2. Use it in your projects that need a physics engine. This one happens to consider special relativity as well.
