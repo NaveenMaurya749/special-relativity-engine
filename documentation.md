@@ -1,6 +1,6 @@
 # 0. What is Relengine?
-Relengine is a point-body engine for special relativity physics.
-Available at the github respository: https://github.com/NaveenMaurya749/special-relativity-engine
+Relengine is a point-body engine for special relativity physics,
+available under the github respository: https://github.com/NaveenMaurya749/special-relativity-engine
 # 1. What is relativity?
 # 2. How does Relengine implement it?
 # 3. Classes
