@@ -6,8 +6,9 @@ class vector_3d:
    self.x = x
    self.y = y
    self.z = z
-  getCoordinates()
-  setCoordinates(double x, double y, double z
+  getCoordinates():
+   return [self.x, self.y, self.z]
+  setCoordinates(double x, double y, double z)
   double getX()
   double getY()
   double getZ()
