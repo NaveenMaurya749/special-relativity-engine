@@ -75,7 +75,7 @@ class Engine:
     dt = float(j)/tps
     for i in Bodies:
      if(i.force != vector_3d(0, 0, 0):
-      i.velocity += (i.force**(1/i.relativistic_mass()))*dt
+      i.velocity += (i.force*(1/i.relativistic_mass()))*dt
      i.position += i.velocity * dt
     time += dt
     j += 1
