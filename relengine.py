@@ -2,29 +2,29 @@ c = 299792458.0 #speed of light in m/s
 import math
 
 class vector_3d:
-  def _init_(self, x, y, z):
+  def __init__(self, x, y, z):
    self.x = x
    self.y = y
    self.z = z
   
-  def _add_(self,other):
+  def __add__(self,other):
    r = vector_3d(0,0,0)
    r.x = self.x + other.x
    r.y = self.y + other.y
    r.z = self.z + other.z
    return r
 
-  def _sub_(self,other):
+  def __sub__(self,other):
    r = vector_3d(0,0,0)
    r.x = self.x - other.x
    r.y = self.y - other.y
    r.z = self.z - other.z
    return r
 
-  def _mul_(self,other):  #Dot Product
+  def __mul__(self,other):  #Dot Product
    return self.x*other.x + self.y*other.y + self.z*other.z
 
-  def _pow_(self, alpha): #Product with scalar
+  def __pow__(self, alpha): #Product with scalar
    r = vector_3d(0,0,0)
    r.x *= alpha
    r.y *= alpha
@@ -41,13 +41,13 @@ class vector_3d:
 
 
 class body:
-  def _init_(self):
+  def __init__(self):
    self.rest_mass = 0.0
    self.position = vector_3d(0,0,0)
    self.velocity = vector_3d(0,0,0)
    self.force = vector_3d(0,0,0)
 
-  def _init_(self, p, v, m, f):
+  def __init__(self, p, v, m, f):
    self.rest_mass = m
    self.position = p
    self.velocity = v
@@ -64,7 +64,9 @@ class body:
    return 1/(math.sqrt(1-self.velocity*self.velocity/(c*c)))
 
 class Engine:
-  def _init_(self):
+  Bodies = []
+  
+  def __init__(self):
    self.Bodies = []
    self.time = 0.0
 
@@ -74,7 +76,7 @@ class Engine:
    while(j < t*tps):
     dt = float(j)/tps
     for i in Bodies:
-     if(i.force != vector_3d(0, 0, 0):
+     if(i.force != vector_3d(0, 0, 0)):
       i.velocity += (i.force*(1/i.relativistic_mass()))*dt
      i.position += i.velocity * dt
     time += dt
