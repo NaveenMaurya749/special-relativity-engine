@@ -1,4 +1,5 @@
 import relengine as Relengine
+import msvcrt
 
 def printSummary(e):
  print("No. of bodies: ", len(e.Bodies))
@@ -28,3 +29,4 @@ engine.relativeTranslation(b)
 print("\n\nAfter simulation and transformation: \n")
 printSummary(engine)
 
+msvcrt.getch()
