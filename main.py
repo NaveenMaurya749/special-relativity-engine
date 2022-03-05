@@ -25,6 +25,6 @@ printSummary(engine)
 engine.run(10.0)
 engine.relativeTranslation(b)
 
-print("\n\nAfter simulation and transformation: ")
+print("\n\nAfter simulation and transformation: \n")
 printSummary(engine)
 
